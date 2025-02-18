@@ -1,0 +1,259 @@
+.car-details {
+  background-color: #0c0c0c;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.hero-image {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, transparent, rgba(12, 12, 12, 0.9));
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
+  margin-top: -100px;
+}
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  color: #3B82F6;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.main-content {
+  background-color: rgba(16, 16, 16, 0.664);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.section {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section-description {
+  color: #999;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-chip {
+  padding: 0.5rem 1rem;
+  background-color: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 2rem;
+  color: #3B82F6;
+  font-size: 0.875rem;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.spec-item {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.5rem;
+}
+
+.spec-label {
+  display: block;
+  color: #999;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.spec-value {
+  font-weight: 600;
+}
+
+.booking-card {
+  background-color: rgba(16, 16, 16, 0.664);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.calendar-nav {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar-nav:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.calendar-month {
+  font-weight: 600;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #999;
+  padding: 0.5rem;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.calendar-day.available {
+  background-color: rgba(59, 130, 246, 0.1);
+  color: #3B82F6;
+}
+
+.calendar-day.unavailable {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #666;
+  cursor: not-allowed;
+}
+
+.price-info {
+  margin-bottom: 2rem;
+}
+
+.price-details {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3B82F6;
+}
+
+.price-period {
+  color: #999;
+}
+
+.price-note {
+  font-size: 0.875rem;
+  color: #999;
+}
+
+.book-button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(45deg, #3B82F6, #EC4899);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.book-button:hover {
+  background: linear-gradient(45deg, #2563EB, #DB2777);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-card {
+    position: static;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 40vh;
+  }
+
+  .container {
+    margin-top: -50px;
+  }
+
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+} 

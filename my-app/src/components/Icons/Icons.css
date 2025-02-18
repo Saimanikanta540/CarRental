@@ -1,0 +1,31 @@
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* Optional: Add specific styles for different icon types */
+.icon-large {
+  font-size: 2rem;
+}
+
+.icon-small {
+  font-size: 1rem;
+}
+
+.icon-primary {
+  color: #3B82F6;
+}
+
+.icon-secondary {
+  color: #999;
+}
+
+.icon-gradient {
+  background: linear-gradient(45deg, #3B82F6, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+} 

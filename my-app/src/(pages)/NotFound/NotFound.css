@@ -1,0 +1,82 @@
+.not-found {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.error-icon {
+  font-size: 120px;
+  color: #1976d2;
+  margin-bottom: 32px;
+  animation: bounce 2s infinite;
+}
+
+.error-code {
+  font-size: 6rem;
+  font-weight: 700;
+  background: linear-gradient(45deg, #0084FF, #00B4FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+
+.error-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.error-message {
+  color: #666;
+  margin-bottom: 32px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #1976d2;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background: #1565c0;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-title {
+    font-size: 1.5rem;
+  }
+
+  .error-icon {
+    font-size: 80px;
+  }
+} 
