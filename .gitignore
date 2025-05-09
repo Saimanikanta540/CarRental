@@ -1,0 +1,31 @@
+# === Java & Spring Boot ===
+*.class
+*.log
+*.jar
+*.war
+*.ear
+/target/
+
+# === Maven Wrapper ===
+# Keep these files so anyone can build the project without Maven installed
+# Do NOT ignore them
+# /mvnw
+# /mvnw.cmd
+
+# === IDEs ===
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
+.project
+.classpath
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === React Frontend (my-app) ===
+my-app/node_modules/
+my-app/build/
+my-app/.env
